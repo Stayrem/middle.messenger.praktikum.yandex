@@ -1,0 +1,37 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
+  "engines": {
+    "node": "v16.13.2"
+  },
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "1.0.9",
+    "@parcel/transformer-pug": "2.7.0",
+    "@parcel/transformer-sass": "2.7.0",
+    "eslint": "8.22.0",
+    "eslint-config-airbnb": "19.0.4",
+    "parcel": "2.7.0",
+    "stylelint": "14.10.0",
+    "stylelint-config-standard": "27.0.0"
+  },
+  "scripts": {
+    "dev": "parcel --port 3000 src/pages/**/*.pug src/pages/index.pug",
+    "build": "parcel build src/pages/**/*.pug src/pages/index.pug",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stayrem/middle.messenger.praktikum.yandex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stayrem/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/Stayrem/middle.messenger.praktikum.yandex#readme",
+  "dependencies": {
+    "normalize.css": "8.0.1",
+    "express": "4.18.1"
+  }
+}

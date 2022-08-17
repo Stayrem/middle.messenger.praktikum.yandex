@@ -1,0 +1,19 @@
+.avatar-modal__card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  max-width: 100%;
+}
+
+.avatar-modal__title {
+  text-align: center;
+}
+
+.avatar-modal__label {
+  margin: 0 auto;
+}
+
+.avatar-modal__btn {
+  color: $color-blue;
+  text-decoration: underline;
+}

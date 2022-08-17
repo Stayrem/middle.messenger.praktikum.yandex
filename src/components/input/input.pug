@@ -1,0 +1,4 @@
+mixin input(title, fieldName, placeholder, type)
+    label(name=fieldName class="label")
+        span(class='label__title')=title
+        input(placeholder=placeholder type=type class="input")

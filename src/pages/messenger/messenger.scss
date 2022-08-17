@@ -1,0 +1,27 @@
+.messenger {
+  display: flex;;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: $colors-grey;
+  width: 310px;
+  height: 100%;
+  border-right: 1px solid $color-portrait-light;
+}
+
+.dialog {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: $colors-beckers-lammul;
+}
+
+.dialog__empty {
+  font-size: 12px;
+  color: $colors-rackham-grey;
+}

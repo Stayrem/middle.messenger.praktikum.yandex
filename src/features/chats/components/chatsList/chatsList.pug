@@ -1,0 +1,23 @@
+.chats
+    ul(class='chats-list')
+        -
+            let chatsList = [
+                { name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?1' },
+                { name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?2' },
+                { name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?3' },
+                { name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?4' },
+                { name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?5?' },
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?1'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?2'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?3'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?4'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?5?'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?1'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?2'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?3'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?4'},
+                {name: 'John Doe', message: 'lorem ipsum', time: '15:12', avatar: 'https://i.pravatar.cc/50?5?'},
+            ]
+        include ../chatItem/chatItem
+        each  value in chatsList
+            +chatItem(value.name, value.message, value.avatar, value.time)

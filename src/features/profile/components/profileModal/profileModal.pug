@@ -1,0 +1,9 @@
+mixin profileModal()
+    div(class='avatar-modal modal hidden')
+        div(class='modal__overlay')
+            div(class='modal__inner')
+                div(class='card avatar-modal__card')
+                    p(class='avatar-modal__title') Upload Avatar
+                    label(class='avatar-modal__label' name='avatar')
+                        span(class='avatar-modal__btn') choose file
+                        input(name='avatar' class='hidden' type='file')

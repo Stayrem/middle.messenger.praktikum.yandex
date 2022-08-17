@@ -1,0 +1,18 @@
+extends ../../layouts/main/main
+
+block content
+    .auth
+        .card
+            h4(class='card__title') Вход
+            -
+                let loginFields = [
+                    {title: 'Login', name: 'login', placeholder: 'john', type: 'text'},
+                    {title: 'Password', name: 'password', placeholder: '', type: 'password'},
+                ]
+            include ../../components/input/input
+            each  value in loginFields
+                +input(value.title, value.name, value.placeholder, value.type)
+            div.auth__actions
+                include ../../components/link/link
+                +link('Auth', '../messenger/messenger.pug')
+                +link('Create account', '../register/register.pug')

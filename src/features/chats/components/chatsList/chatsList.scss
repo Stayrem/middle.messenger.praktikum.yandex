@@ -1,0 +1,10 @@
+.chats {
+  height: calc(100% - 111px);
+  overflow: auto;
+}
+
+.chats-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}

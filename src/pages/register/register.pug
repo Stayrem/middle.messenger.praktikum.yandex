@@ -1,0 +1,24 @@
+extends ../../layouts/main/main
+
+block content
+    .auth
+        .card
+            h4(class='card__title') Регистрация
+            -
+                let registerFields = [
+                    {title: 'Email', name: 'email', placeholder: 'example@email.com', type: 'text'},
+                    {title: 'Login', name: 'login', placeholder: 'john', type: 'text'},
+                    {title: 'First Name', name: 'first_name', placeholder: 'John', type: 'text'},
+                    {title: 'Last Name', name: 'second_name', placeholder: 'Doe', type: 'text'},
+                    {title: 'Phone Number', name: 'phone', placeholder: '+7 (999) 999 99 99', type: 'text'},
+                    {title: 'Password', name: 'password', placeholder: '', type: 'password'},
+                    {title: 'Password Once Again', name: 'password-check', placeholder: '', type: 'text'}
+                ]
+            include ../../components/input/input
+            each  value in registerFields
+                +input(value.title, value.name, value.placeholder, value.type)
+            div.auth__actions
+                include ../../components/button/button
+                +button('Create account', 'primary')
+                include ../../components/link/link
+                +link('Sign in', '../login/login.pug')

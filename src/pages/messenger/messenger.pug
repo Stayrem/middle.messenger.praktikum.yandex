@@ -1,0 +1,9 @@
+extends ../../layouts/main/main
+
+block content
+    div(class='messenger')
+        div(class='sidebar')
+            include ../../features/chats/components/chatsHeader/chatsHeader
+            include ../../features/chats/components/chatsList/chatsList
+        div(class='dialog')
+            p(class='dialog__empty') Choose Chat
