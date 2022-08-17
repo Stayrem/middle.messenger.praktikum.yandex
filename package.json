@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "parcel --port 3000 src/pages/**/*.pug src/pages/index.pug",
     "build": "parcel build src/pages/**/*.pug src/pages/index.pug",
-    "start": "node server.js"
+    "start": "npm run build && node server.js"
   },
   "repository": {
     "type": "git",
