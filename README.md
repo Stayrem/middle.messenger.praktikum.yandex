@@ -21,3 +21,8 @@ npm run build
 ## Figma Design
 
 https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1
+
+
+## Netlify
+
+https://gentle-salmiakki-d2529e.netlify.app/
