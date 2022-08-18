@@ -8,18 +8,7 @@ block content
                 div(class='profile__avatar')
 
                     button(class='profile__avatar__edit')
-                        img(class='profile__avatar__img' src='https://i.pravatar.cc/130')
-                -
-                    let profileTableKeyValue = [
-                        { key: 'Почта', value: 'pochta@yandex.ru' },
-                        { key: 'Логин', value: 'ivanivanov' },
-                        { key: 'Имя', value: 'Иван' },
-                        { key: 'Фамилия', value: 'Иванов' },
-                        { key: 'Имя в чате', value: 'Иван' },
-                        { key: 'Имя в чате', value: 'Иван' },
-                        { key: 'Телефон', value: '+7 (909) 967 30 30' },
-                    ];
-                    let profileActions = [{}]
+                        img(class='profile__avatar__img' alt="avatar" src='https://i.pravatar.cc/130')
                 dl(class='profile-table')
                     each  value in profileTableKeyValue
                         div(class='profile-table__row')
