@@ -1,13 +1,4 @@
 div(class='routes')
-    -
-        let routesList = [
-            {name: 'messenger', path: './messenger/messenger.pug'},
-            {name: 'profile', path: './profile/profile.pug'},
-            {name: 'login', path: './login/login.pug'},
-            {name: 'register', path: './register/register.pug'},
-            {name: '404', path: './404/404.pug'},
-            {name: '500', path: './500/500.pug'},
-        ]
     ul(class='routes__list')
         each  value in routesList
             li(class='routes__list-item')

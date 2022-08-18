@@ -1,0 +1,204 @@
+{
+  "locals": {
+    "chatsList": [
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?1"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?2"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?3"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?4"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?5?"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?1"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?2"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?3"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?4"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?5?"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?1"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?2"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?3"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?4"
+       },
+       {
+         "name": "John Doe",
+         "message": "lorem ipsum",
+         "time": "15:12",
+         "avatar": "https://i.pravatar.cc/50?5?"
+       }
+     ],
+    "registerFields": [
+        {
+          "title": "Email",
+          "name": "email",
+          "placeholder": "example@email.com",
+          "type": "text"
+        },
+        {
+          "title": "Login",
+          "name": "login",
+          "placeholder": "john",
+          "type": "text"
+        },
+        {
+          "title": "First Name",
+          "name": "first_name",
+          "placeholder": "John",
+          "type": "text"
+        },
+        {
+          "title": "Last Name",
+          "name": "second_name",
+          "placeholder": "Doe",
+          "type": "text"
+        },
+        {
+          "title": "Phone Number",
+          "name": "phone",
+          "placeholder": "+7 (999) 999 99 99",
+          "type": "text"
+        },
+        {
+          "title": "Password",
+          "name": "password",
+          "placeholder": "",
+          "type": "password"
+        },
+        {
+          "title": "Password Once Again",
+          "name": "password-check",
+          "placeholder": "",
+          "type": "text"
+        }
+      ],
+    "routesList": [
+        {
+          "name": "messenger",
+          "path": "./messenger/messenger.pug"
+        },
+        {
+          "name": "profile",
+          "path": "./profile/profile.pug"
+        },
+        {
+          "name": "login",
+          "path": "./login/login.pug"
+        },
+        {
+          "name": "register",
+          "path": "./register/register.pug"
+        },
+        {
+          "name": "404",
+          "path": "./404/404.pug"
+        },
+        {
+          "name": "500",
+          "path": "./500/500.pug"
+        }
+      ],
+    "loginFields": [
+        {
+          "title": "Login", "name": "login", "placeholder": "john", "type": "text"
+        },
+        {
+          "title": "Password", "name": "password", "placeholder": "", "type": "password"
+        }
+    ],
+    "profileTableKeyValue": [
+      {
+        "key": "Почта",
+        "value": "pochta@yandex.ru"
+      },
+      {
+        "key": "Логин",
+        "value": "ivanivanov"
+      },
+      {
+        "key": "Имя",
+        "value": "Иван"
+      },
+      {
+        "key": "Фамилия",
+        "value": "Иванов"
+      },
+      {
+        "key": "Имя в чате",
+        "value": "Иван"
+      },
+      {
+        "key": "Имя в чате",
+        "value": "Иван"
+      },
+      {
+        "key": "Телефон",
+        "value": "+7 (909) 967 30 30"
+      }
+    ]
+  }
+}

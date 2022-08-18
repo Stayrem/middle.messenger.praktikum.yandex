@@ -1,7 +1,7 @@
 mixin chatItem(name, message, avatar, time)
     li(class='chat')
         a(class='chat__link')
-            img(class='chat__avatar' src=avatar width="47" heigh="47")
+            img(class='chat__avatar' src=avatar alt='avatar' width="47" heigh="47")
             div(class='chat__info')
                 p(class='chat__name')= name
                 p(class='chat__message')= message
