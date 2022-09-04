@@ -1,0 +1,42 @@
+.chat {
+  border-bottom: 1px solid $color-portrait-light;
+}
+
+.chat__link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 0;
+  margin: 0 10px;
+}
+
+.chat__avatar {
+  border-radius: 50%;
+}
+
+.chat__info {
+  flex-grow: 1;
+  position: relative;
+  height: 47px;
+}
+
+.chat__name {
+  font-size: 13px;
+  color: $color-black;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.chat__message {
+ color: $color-silver-grey;
+ font-size: 12px;
+ margin: 0;
+}
+
+.chat__time {
+  color: $color-silver-grey;
+  font-size: 9px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,5 @@
+div(class='routes')
+    ul(class='routes__list')
+        each  value in routesList
+            li(class='routes__list-item')
+                a(class='routes__list-lnk' href=value.path)= value.name

@@ -1,0 +1,5 @@
+.chats
+    ul(class='chats-list')
+        include ../chatItem/chatItem
+        each  value in chatsList
+            +chatItem(value.name, value.message, value.avatar, value.time)

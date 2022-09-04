@@ -1,0 +1,23 @@
+.input {
+  max-width: 280px;
+  padding-bottom: 7px;
+  font-size: 13px;
+  width: 100%;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  transition: 0.3s border-color;
+  &:focus {
+    border-color: $color-blue;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.label__title {
+  font-size: 9px;
+  padding-bottom: 7px;
+}

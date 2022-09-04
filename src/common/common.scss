@@ -1,0 +1,10 @@
+@import "npm:normalize.css/normalize.css";
+@import "vars";
+
+@import "../components/index";
+@import "../pages/messenger/messenger";
+@import "../pages/profile/profile";
+
+@import "style";
+@import "../layouts/index";
+@import "../features/index";
