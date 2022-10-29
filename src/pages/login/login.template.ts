@@ -1,17 +1,22 @@
 export interface ILogin {
   login: string;
   password: string;
-  auth: string;
+  loginError: string;
+  passwordError: string;
+  button: string;
   createAccount: string;
 }
 
 export default ({
-  login, password, auth, createAccount,
+  login, password, button, createAccount, loginError, passwordError,
 }: ILogin) => `.auth
         .card
           h4(class='card__title') Вход
-          ${login}
-          ${password}
+          form
+            ${login}
+            ${loginError}
+            ${password}
+            ${passwordError}
           div.auth__actions
-            ${auth}
+            ${button}
             ${createAccount}`;

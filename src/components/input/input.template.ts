@@ -2,9 +2,7 @@ import { IInput } from './Input';
 
 export default (props: IInput) => {
   const {
-    title, name, placeholder, type,
+    name, type, placeholder,
   } = props;
-  return `label(name="${name}" class="label")
-        span(class='label__title') ${title}
-        input(placeholder="${placeholder}" type="${type}" class="input")`;
+  return `input(placeholder="${placeholder}" name="${name}" type="${type}" class="input")`;
 };

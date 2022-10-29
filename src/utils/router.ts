@@ -7,9 +7,9 @@ type ITemplates = IndexPage;
 const root = document.querySelector('#root')!;
 
 const routes: Record<string, ITemplates> = {
-  '/': new IndexPage(),
+  // '/': new IndexPage(),
   '/login': new Login(),
-  '/register': new Register(),
+  // '/register': new Register(),
 };
 
 const router = (path: string) => {
