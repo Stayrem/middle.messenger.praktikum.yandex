@@ -4,11 +4,11 @@ export interface ILogin {
   loginError: string;
   passwordError: string;
   button: string;
-  createAccount: string;
+  link: string;
 }
 
 export default ({
-  login, password, button, createAccount, loginError, passwordError,
+  login, password, button, link, loginError, passwordError,
 }: ILogin) => `.auth
         .card
           h4(class='card__title') Вход
@@ -19,4 +19,4 @@ export default ({
             ${passwordError}
           div.auth__actions
             ${button}
-            ${createAccount}`;
+            ${link}`;

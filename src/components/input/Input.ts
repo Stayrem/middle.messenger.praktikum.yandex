@@ -1,23 +1,8 @@
 import { render } from 'pug';
 import Block from '../../utils/block';
 import template from './input.template';
-import { IComponentProps } from '../../utils/types';
-import { validateInput } from '../../utils/validation';
 
-export interface IInput {
-  name: string;
-  type: string;
-  placeholder: string;
-  events?: {
-    blur: (evt: InputEvent) => void;
-  };
-}
-
-class Input extends Block {
-  constructor(props: IInput) {
-    super(props);
-  }
-
+export class Input extends Block {
   public getName() {
     return (this.element as HTMLInputElement).name;
   }
@@ -31,5 +16,3 @@ class Input extends Block {
     return this.compile(() => templateWithStubs, {});
   }
 }
-
-export default Input;

@@ -1,0 +1,13 @@
+
+  .chats-message__input {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: $color-diamond-white;
+    margin-right: 10px;
+
+    &.chats-message__input--error {
+      border-color: $color-red;
+    }
+  }

@@ -1,24 +1,34 @@
 const validationHelper = {
   login: {
-    required: true,
-    minLength: 3,
-    maxLength: 20,
-    pattern: /^\S*$||(?!^\d+$)^.+$/gi,
+    pattern: /^(?=.*[a-zA-Z])([a-zA-Z0-9-_]){3,20}$/,
+  },
+  email: {
+    pattern: /.+@[^@]+[a-z]+\.[^@]{2,}$/,
   },
   password: {
-    required: true,
-    minLength: 3,
-    maxLength: 20,
-    pattern: /^\S*$||(?!^\d+$)^.+$/gi,
+    pattern: /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,40}$/,
+  },
+  repeat_password: {
+    pattern: /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,40}$/,
+  },
+  firstName: {
+    pattern: /^[А-ЯЁA-Z][А-ЯЁA-Zа-яёa-z-]+$/,
+  },
+  lastName: {
+    pattern: /^[А-ЯЁA-Z][А-ЯЁA-Zа-яёa-z-]+$/,
+  },
+  phone: {
+    pattern: /^[+-d]?\d{10,15}$/,
+  },
+  message: {
+    pattern: /^(?!\s*$).+/,
   },
 };
 
 export const validateInput = (str: string, name: keyof typeof validationHelper) => {
   const {
-    minLength, maxLength, required, pattern,
+    pattern,
   } = validationHelper[name];
 
-  const isValidLength = (str || '').length > minLength && (str || '').length < maxLength;
-  const isValidByPattern = pattern.test(str);
-  return [isValidByPattern, isValidLength].every((it) => it);
+  return pattern.test(str);
 };

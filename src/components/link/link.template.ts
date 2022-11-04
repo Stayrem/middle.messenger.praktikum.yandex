@@ -1,9 +1,14 @@
-interface ILink {
-  text: string;
+export interface ILink {
+  title: string;
   href: string;
-  classname: string;
+  target?: string;
+  classname?: string;
 }
-
-const linkTemplate = ({ text, href, classname = '' }: ILink) => `a(class="link ${classname}" href="${href}")="${text}"`;
+const linkTemplate = (props: ILink) => {
+  const {
+    title, href, classname = '', target = '_self',
+  } = props;
+  return `a(class="link ${classname}" target="${target}" href="${href}")="${title}"`;
+};
 
 export default linkTemplate;

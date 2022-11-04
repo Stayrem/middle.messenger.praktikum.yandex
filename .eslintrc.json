@@ -11,7 +11,8 @@
     "rules": {
         "import/prefer-default-export": "off",
         "no-underscore-dangle": "off",
-        "import/no-unresolved": "error"
+        "import/no-unresolved": "error",
+        "class-methods-use-this": "off"
     },
     "env":    {
         "browser": true

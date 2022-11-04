@@ -7,10 +7,14 @@
   border-left: none;
   border-top: none;
   transition: 0.3s border-color;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   &:focus {
     border-color: $color-blue;
   }
+}
+
+.input-err {
+  font-size: 10px;
 }
 
 .label {

@@ -4,11 +4,11 @@ import Block from '../utils/block';
 const routesList = [
   {
     name: 'messenger',
-    path: './messenger/messenger.pug',
+    path: '/messenger',
   },
   {
     name: 'profile',
-    path: './profile/profile.pug',
+    path: '/profile',
   },
   {
     name: 'login',
@@ -16,23 +16,32 @@ const routesList = [
   },
   {
     name: 'register',
-    path: './register',
+    path: '/register',
   },
   {
     name: '404',
-    path: './404/404.pug',
+    path: '/404',
   },
   {
     name: '500',
-    path: './500/500.pug',
+    path: '/500',
   },
 ];
 
 const baseTemplate = `div(class='routes')
     ul(class='routes__list')
-        each  value in routesList
-            li(class='routes__list-item')
-                a(class='routes__list-lnk' href= value.path)= value.name`;
+      li(class='routes__list-item')
+        a(class='routes__list-lnk' href="/messenger") messenger
+      li(class='routes__list-item')
+        a(class='routes__list-lnk' href="/profile") profile
+      li(class='routes__list-item')
+        a(class='routes__list-lnk' href="/login") login
+      li(class='routes__list-item')
+        a(class='routes__list-lnk' href="/register") register
+      li(class='routes__list-item')
+        a(class='routes__list-lnk' href="/404") 404
+      li(class='routes__list-item')
+        a(class='routes__list-lnk' href="/500") 500`;
 
 export class IndexPage extends Block {
   render() {

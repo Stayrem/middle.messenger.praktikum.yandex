@@ -1,12 +1,10 @@
 import { render } from 'pug';
 import Block from '../../utils/block';
-import template, { ILink } from './link.template';
+import template, { IError } from './error.template';
 
-class Link extends Block<ILink> {
+export class Error extends Block<IError> {
   render() {
     const templateWithStubs = render(template(this.props), {});
     return this.compile(() => templateWithStubs, {});
   }
 }
-
-export default Link;

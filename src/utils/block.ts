@@ -20,12 +20,6 @@ class Block<P extends Record<string, any> = any> {
 
   private _element: HTMLElement | null = null;
 
-  /** JSDoc
-   * @param {string} tagName
-   * @param {Object} props
-   *
-   * @returns {void}
-   */
   constructor(propsWithChildren: P) {
     const eventBus = new EventBus();
 
@@ -41,7 +35,9 @@ class Block<P extends Record<string, any> = any> {
     eventBus.emit(Block.EVENTS.INIT);
   }
 
-  _getChildrenAndProps(childrenAndProps: P): { props: P, children: Record<string, Block | Block[]> } {
+  _getChildrenAndProps(childrenAndProps: P): {
+    props: P, children: Record<string, Block | Block[]>
+  } {
     const props: Record<string, unknown> = {};
     const children: Record<string, Block | Block[]> = {};
 
@@ -107,6 +103,7 @@ class Block<P extends Record<string, any> = any> {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   protected componentDidUpdate(oldProps: P, newProps: P) {
     return true;
   }
@@ -166,6 +163,7 @@ class Block<P extends Record<string, any> = any> {
       stub.replaceWith(component.getContent()!);
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     Object.entries(this.children).forEach(([_, component]) => {
       if (Array.isArray(component)) {
         component.forEach(replaceStub);
@@ -195,13 +193,14 @@ class Block<P extends Record<string, any> = any> {
         return typeof value === 'function' ? value.bind(target) : value;
       },
       set(target, prop: string, value) {
+        const newTarget = target;
         const oldTarget = { ...target };
 
-        target[prop as keyof P] = value;
+        newTarget[prop as keyof P] = value;
 
         // Запускаем обновление компоненты
         // Плохой cloneDeep, в следующей итерации нужно заставлять добавлять cloneDeep им самим
-        self.eventBus().emit(Block.EVENTS.FLOW_CDU, oldTarget, target);
+        self.eventBus().emit(Block.EVENTS.FLOW_CDU, oldTarget, newTarget);
         return true;
       },
       deleteProperty() {

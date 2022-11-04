@@ -1,7 +1,6 @@
 import { render } from 'pug';
 import Block from '../../utils/block';
 import template from './button.template';
-import { IComponentProps } from '../../utils/types';
 
 export interface ButtonProps {
   label: string;
