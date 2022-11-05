@@ -1,4 +1,20 @@
 {
     "ignorePatterns": ["dist/*/**.js"],
-    "extends": "airbnb"
+    "extends": [
+        "airbnb",
+        "airbnb-typescript"
+    ],
+    "parserOptions": {
+        "project": ["./tsconfig.json"]
+    },
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": "off",
+        "import/no-unresolved": "error",
+        "class-methods-use-this": "off"
+    },
+    "env":    {
+        "browser": true
+    }
 }

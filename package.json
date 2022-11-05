@@ -5,19 +5,42 @@
   "engines": {
     "node": "v16.13.2"
   },
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": ">= 50%"
+      }
+    }
+  },
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "1.0.9",
+    "@babel/eslint-parser": "7.18.9",
+    "@babel/plugin-transform-typescript": "7.19.0",
     "@parcel/transformer-pug": "2.7.0",
     "@parcel/transformer-sass": "2.7.0",
+    "@parcel/transformer-typescript-tsc": "^2.7.0",
+    "@types/pug": "^2.0.6",
+    "@typescript-eslint/eslint-plugin": "5.36.2",
+    "@typescript-eslint/parser": "5.36.2",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
     "eslint": "8.22.0",
     "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "install": "0.13.0",
+    "npm": "8.19.1",
+    "os-browserify": "^0.3.0",
     "parcel": "2.7.0",
+    "parcel-transformer-pug-precompile": "1.0.6",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "stylelint": "14.10.0",
-    "stylelint-config-standard": "27.0.0"
+    "stylelint-config-standard": "27.0.0",
+    "typescript": "^4.8.2"
   },
   "scripts": {
-    "dev": "parcel --port 3000 src/pages/**/*.pug src/pages/index.pug",
-    "build": "parcel build src/pages/**/*.pug src/pages/index.pug",
+    "dev": "parcel --port 3000 src/pages/index.html",
+    "build": "parcel build src/pages/index.html",
     "start": "npm run build && node server.js"
   },
   "repository": {
@@ -31,7 +54,10 @@
   },
   "homepage": "https://github.com/Stayrem/middle.messenger.praktikum.yandex#readme",
   "dependencies": {
+    "express": "4.18.1",
+    "express-history-api-fallback": "2.2.1",
+    "nanoid": "4.0.0",
     "normalize.css": "8.0.1",
-    "express": "4.18.1"
+    "pug": "^3.0.2"
   }
 }

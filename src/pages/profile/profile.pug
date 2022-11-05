@@ -15,7 +15,7 @@ block content
                             dt(class='profile-table__dt')= value.key
                             dl(class='profile-table__dl')= value.value
                 div(class='profile-actions')
-                    include ../../components/link/link
+                    include ../../components/link/link.template.ts
                     +link('Edit', '', '')
                     +link('Change Password', '', '')
                     +link('Logout', '', '')
